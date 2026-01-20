@@ -119,7 +119,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #### **关于 Qt 静态链接的合规性提醒**
 
 本项目（.exe）使用了开源版本的 Qt 6 框架 (LGPLv3) 并进行了**静态链接**。
-根据 LGPLv3 协议要求，作者已在 GitHub **[Releases](https://github.com/Iviesever/practice_questions/releases)** 页面提供了本程序编译后的**对象文件压缩包 (object_files.zip)**。
+根据 LGPLv3 协议要求，作者已在 GitHub **[object_files.zip](https://github.com/Iviesever/Helper-02/blob/main/object_files.zip)** 提供了本程序编译后的**对象文件压缩包**。
 如果您希望使用不同版本的 Qt 库重新链接本程序，请下载该压缩包并使用您的链接器进行操作。
 
 #### **法律免责声明**

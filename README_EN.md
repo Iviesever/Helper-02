@@ -25,6 +25,7 @@ A high-performance, cross-platform question practice software developed with **C
 ### 🎓 Exam Simulation System
 
 *   **Real Simulation**: Supports **countdown timer** to simulate real exam pressure.
+*   **Custom Configuration**: Freely set **number of questions** and **score weight** for each question type.
 *   **Answer Sheet**: Visual answer sheet status (Answered/Unanswered) with one-click navigation.
 *   **Score Statistics**: Generates detailed reports after submission, verifying total score, accuracy, and time used.
 
@@ -46,12 +47,12 @@ A high-performance, cross-platform question practice software developed with **C
 
 ### 1. Run App
 
-*   **Windows**: Download and run the `.exe` directly.
-*   **Android**: Download and install the `.apk` directly.
+*   **Windows**: Download [helper02.exe](https://github.com/Iviesever/Helper-02/releases/latest/download/helper02.exe) directly.
+*   **Android**: Download [helper02.apk](https://github.com/Iviesever/Helper-02/releases/latest/download/helper02.apk) directly and install.
 
 ### 2. 📂 How to Create Question Bank (Core)
 
-The most powerful feature is the "What You See Is What You Get" text import.
+The most powerful feature of this software is the "What You See Is What You Get" text import.
 
 1.  **Get Question Text**:
     *   Open the **Homework**, **Quiz**, or **Exam Review** page on the learning platform in a PC browser.
@@ -116,7 +117,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #### **Note on Qt Static Linking Compliance**
 
-This project (.exe) uses the open-source version of the Qt framework (LGPLv3) and is **statically linked**. According to the requirements of the LGPLv3 license, when distributing an application in this manner, you must provide a way for the end user to re-link the application, such as providing the object files (.obj) of your own program.
+This project (.exe) uses the open-source version of the Qt 6 framework (LGPLv3) and is **statically linked**.
+According to the LGPLv3 license requirements, the author has provided the **object files archive** of this program at GitHub **[object_files.zip](https://github.com/Iviesever/Helper-02/blob/main/object_files.zip)**.
+If you wish to re-link this program using a different version of the Qt library, please download the archive and use your linker to proceed.
 
 #### **Legal Disclaimer**
 

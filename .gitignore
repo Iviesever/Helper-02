@@ -6,6 +6,7 @@ practice.4C2CA9A4
 *.user
 
 # Build directories
+android
 build/
 build-*/
 debug/

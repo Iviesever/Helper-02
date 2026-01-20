@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PracticeStrategyPage</class>
+ <widget class="QWidget" name="PracticeStrategyPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_Main">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollContent">
+      <layout class="QVBoxLayout" name="verticalLayout_Content">
+       <property name="spacing">
+        <number>12</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_Header">
+         <item>
+          <widget class="QPushButton" name="btnBack">
+           <property name="text">
+            <string>&lt; 返回</string>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_Title">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>刷题策略</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="spacer_Header">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_Stats">
+         <property name="title">
+          <string>题型统计</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_Stats">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_SingleTitle">
+            <property name="text">
+             <string>单选题:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_SingleCount">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_MultiTitle">
+            <property name="text">
+             <string>多选题:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_MultiCount">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_JudgeTitle">
+            <property name="text">
+             <string>判断题:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_JudgeCount">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_FillTitle">
+            <property name="text">
+             <string>填空题:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLabel" name="label_FillCount">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="4">
+           <widget class="QLabel" name="label_TotalCount">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>总计: 0 题</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_Distribution">
+         <property name="title">
+          <string>答案分布分析</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_Distribution">
+          <item>
+           <widget class="QLabel" name="label_SingleDistTitle">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>单选题答案分布:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_SingleDistA">
+            <property name="text">
+             <string>  A: 0 (0%)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_SingleDistB">
+            <property name="text">
+             <string>  B: 0 (0%)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_SingleDistC">
+            <property name="text">
+             <string>  C: 0 (0%)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_SingleDistD">
+            <property name="text">
+             <string>  D: 0 (0%)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_JudgeDistTitle">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>判断题答案分布:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_JudgeDistA">
+            <property name="text">
+             <string>  A(对): 0 (0%)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_JudgeDistB">
+            <property name="text">
+             <string>  B(错): 0 (0%)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_SingleStrategy">
+         <property name="title">
+          <string>单选题跳过策略</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_SingleStrategy">
+          <item>
+           <widget class="QCheckBox" name="chkSkipSingleMostCommon">
+            <property name="text">
+             <string>跳过最常见答案 (A)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_SingleHint">
+            <property name="styleSheet">
+             <string>color: gray; font-size: 9pt;</string>
+            </property>
+            <property name="text">
+             <string>单独跳过选项 (最常见优先):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_SingleOpts">
+            <item>
+             <widget class="QCheckBox" name="chkSkipSingleA">
+              <property name="text">
+               <string>A</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkSkipSingleB">
+              <property name="text">
+               <string>B</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkSkipSingleC">
+              <property name="text">
+               <string>C</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkSkipSingleD">
+              <property name="text">
+               <string>D</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer_SingleOpts">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_JudgeStrategy">
+         <property name="title">
+          <string>判断题跳过策略</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_JudgeStrategy">
+          <item>
+           <widget class="QCheckBox" name="chkSkipJudgeMostCommon">
+            <property name="text">
+             <string>跳过最常见答案 (A/对)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_JudgeHint">
+            <property name="styleSheet">
+             <string>color: gray; font-size: 9pt;</string>
+            </property>
+            <property name="text">
+             <string>单独跳过选项 (最常见优先):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_JudgeOpts">
+            <item>
+             <widget class="QCheckBox" name="chkSkipJudgeA">
+              <property name="text">
+               <string>A(对)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkSkipJudgeB">
+              <property name="text">
+               <string>B(错)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer_JudgeOpts">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_Exclusion">
+         <property name="title">
+          <string>排除设置</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_Exclusion">
+          <item>
+           <widget class="QCheckBox" name="chkExcludeDuplicates">
+            <property name="text">
+             <string>排除重复题目</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="chkExcludeMultiAll">
+            <property name="text">
+             <string>排除多选全选题</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

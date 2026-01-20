@@ -1,0 +1,15 @@
+﻿.vs
+x64
+practice.4C2CA9A4
+
+# Qt Creator
+*.user
+
+# Build directories
+build/
+build-*/
+debug/
+release/
+
+# Binary and large files
+*.aps

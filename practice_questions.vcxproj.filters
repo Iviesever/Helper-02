@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\parser">
+      <UniqueIdentifier>{510d7f9d-0a18-40fb-b991-902420cc4b56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\page">
+      <UniqueIdentifier>{bb6de14d-7b07-48d1-a771-10134acb42ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\parser">
+      <UniqueIdentifier>{63b8f66b-fb3f-4a22-b11c-90b917df7f6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\page">
+      <UniqueIdentifier>{757e596f-23eb-420a-846d-91da389f0497}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="MainWindow.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="MainWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="platform_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="storage_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pages\ExamConfigPage.cpp">
+      <Filter>Source Files\page</Filter>
+    </ClCompile>
+    <ClCompile Include="pages\HistoryPage.cpp">
+      <Filter>Source Files\page</Filter>
+    </ClCompile>
+    <ClCompile Include="pages\HomePage.cpp">
+      <Filter>Source Files\page</Filter>
+    </ClCompile>
+    <ClCompile Include="pages\SettingsPage.cpp">
+      <Filter>Source Files\page</Filter>
+    </ClCompile>
+    <ClCompile Include="parser\text_parser.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="pages\ParserStrategyPage.cpp">
+      <Filter>Source Files\page</Filter>
+    </ClCompile>
+    <ClCompile Include="pages\PracticeStrategyPage.cpp">
+      <Filter>Source Files\page</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="platform_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="question.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="storage_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parser\parser_strategy.h">
+      <Filter>Header Files\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="parser\text_parser.h">
+      <Filter>Header Files\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="pages\ExamConfigPage.h">
+      <Filter>Header Files\page</Filter>
+    </QtMoc>
+    <QtMoc Include="pages\HistoryPage.h">
+      <Filter>Header Files\page</Filter>
+    </QtMoc>
+    <QtMoc Include="pages\HomePage.h">
+      <Filter>Header Files\page</Filter>
+    </QtMoc>
+    <QtMoc Include="pages\SettingsPage.h">
+      <Filter>Header Files\page</Filter>
+    </QtMoc>
+    <QtMoc Include="pages\ParserStrategyPage.h">
+      <Filter>Header Files\page</Filter>
+    </QtMoc>
+    <QtMoc Include="pages\PracticeStrategyPage.h">
+      <Filter>Header Files\page</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="pages\HomePage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="pages\SettingsPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="pages\HistoryPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="pages\ExamConfigPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="pages\ParserStrategyPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="pages\PracticeStrategyPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="favicon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="README_EN.md">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

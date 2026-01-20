@@ -1,7 +1,9 @@
-#include "HomePage.h"
+﻿#include "HomePage.h"
 
 #include <QScrollBar>
 #include <QScroller>
+#include <QMessageBox>
+#include <QPushButton>
 
 HomePage::HomePage(QWidget *parent)
     : QWidget(parent)
@@ -41,5 +43,17 @@ HomePage::HomePage(QWidget *parent)
         } else {
             ui.listWidgetFiles->selectAll();
         }
+    });
+
+    // 关于按钮
+    QPushButton* btnAbout = new QPushButton("关于", this);
+    btnAbout->setFlat(true);
+    ui.verticalLayout_HomeContent->addWidget(btnAbout);
+
+    connect(btnAbout, &QPushButton::clicked, this, [this]() {
+        QMessageBox::about(this, "关于",
+            "<h3>助手2号 (helper 02)</h3>"
+            "<p>作者: Iviesever</p>"
+            "<p>GitHub: <a href='https://github.com/Iviesever/Helper-02'>https://github.com/Iviesever/Helper-02</a></p>");
     });
 }
